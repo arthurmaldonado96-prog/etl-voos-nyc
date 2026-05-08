@@ -64,13 +64,6 @@ O dashboard foi desenvolvido no Power BI e contém:
 * Determinadas companhias possuem maior atraso que outras
 * Existe um padrão temporal nos atrasos ao longo do ano
 
----
-
-## Possíveis Melhorias
-
-* Implementar modelo de Machine Learning para previsão de atrasos
-* Automatizar pipeline ETL
-* Criar API para consumo dos dados
 
 ---
 
