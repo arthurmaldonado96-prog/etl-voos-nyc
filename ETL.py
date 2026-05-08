@@ -22,7 +22,12 @@ def periodo(h):
     else:
         return 'Noite'
     
-df['periodo_dia'] = df['dep_time'].apply(lambda x: periodo(int(x/100)))
+def converter_hora(x):
+    if pd.isna(x):
+        return None
+    return int(x / 100)
+
+df['periodo_dia'] = df['dep_time'].apply(converter_hora).apply(periodo)
     
 # salvando
 df.to_csv('nyc_flights_tratado.csv', index=False)
